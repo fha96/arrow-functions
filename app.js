@@ -204,4 +204,4 @@ joe.scopeArrow();
 // 2. What is "this" when joe.scopeArrow() is invoked?
 //    it will not invoked a student's object it invoked global object -window-
 // 3. Explain why "this" is different when an arrow function is used.
-//    As i read in the MDN it will take the value of this from enclosing scope not from the object I intended before.
+//    As I read before in the MDN it will take the value of this from enclosing scope not from the object I intended before.
