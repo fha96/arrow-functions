@@ -158,6 +158,7 @@ let joe = new Student('Joe Schmoe', 100, 'Anytown, USA');
 // Note that the arrow function will cause this code to break!
 console.log(joe);
 
+
 // TODO: After viewing the previous console.log(), return the code to a working state.
 
 
@@ -195,12 +196,12 @@ joe.scope();
 Student.prototype.scopeArrow = () => console.log(this);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// joe.scopeArrow();
+joe.scopeArrow();
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//
+//    it invoked the student's object which I created in line 155. 
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+//    it will not invoked a student's object it invoked global object -window-
 // 3. Explain why "this" is different when an arrow function is used.
-//
+//    As i read in the MDN it will take the value of this from enclosing scope not from the object I intended before.
